@@ -100,4 +100,4 @@ console.log(fruits.indexOf("Mango"));
 let fruits = ["Apple", "Banana", "Mango"];
 
 console.log(fruits.join(", "));
-//-------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------git commit -m "Updated JavaScript functions"git commit -m "Updated JavaScript functions"
