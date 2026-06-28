@@ -126,10 +126,10 @@ for (let i =1 ; i <=n; i++){
 
 // Two traingle facing opposite direction
 // n = 5 determines the size of the butterfly.
-let n = 5;
+let x = 5;
 
 // Upper Half
-for (let i = 1; i <= n; i++) {
+for (let i = 1; i <= x; i++) {
     let pattern = "";
 
     // Left Stars
@@ -138,7 +138,7 @@ for (let i = 1; i <= n; i++) {
     }
 
     // Spaces
-    for (let j = 1; j <= 2 * (n - i); j++) {
+    for (let j = 1; j <= 2 * (x - i); j++) {
         pattern += " ";
     }
 
@@ -179,14 +179,14 @@ for (let i = x - 1; i >= 1; i--) {
 // stars increase by 2 every row
 // Print two rows for the trunk.
 //prints spaces to center the trunk
-let n = 5;
+let m = 5;
 
 // Tree (Pyramid)
-for (let i = 1; i <= n; i++) {
+for (let i = 1; i <= m; i++) {
     let pattern = "";
 
     // Spaces
-    for (let j = 1; j <= n - i; j++) {
+    for (let j = 1; j <= m - i; j++) {
         pattern += " ";
     }
 
@@ -203,7 +203,7 @@ for (let i = 1; i <= 2; i++) {
     let pattern = "";
 
     // Center the trunk
-    for (let j = 1; j <= n - 1; j++) {
+    for (let j = 1; j <= m - 1; j++) {
         pattern += " ";
     }
 
