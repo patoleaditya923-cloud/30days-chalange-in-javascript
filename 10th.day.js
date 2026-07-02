@@ -16,8 +16,20 @@ console.log(car.model);
 console.log(car.year);
 
 //=========================================================================================================================git
+// /The object stores information about a car.
+// Each property is accessed using dot notation
 
+let car = {
+    brand: "Toyota",
+    model: "Fortuner",
+    year: 2024
+};
 
+console.log(car.brand);
+console.log(car.model);
+console.log(car.year);
+
+//====================================================================================
 
 //------------------------------------------------- 2- student object ------------------------------------------------------------------------
 // It has three properties: name, age, and course.
