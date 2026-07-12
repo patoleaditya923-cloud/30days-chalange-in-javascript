@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="20thday.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Expense Tracker</h1>
+
+    <div class="summary">
+        <div class="box income">
+            <h3>Income</h3>
+            <p id="income">₹0</p>
+        </div>
+
+        <div class="box expense">
+            <h3>Expense</h3>
+            <p id="expense">₹0</p>
+        </div>
+
+        <div class="box balance">
+            <h3>Balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+    </div>
+
+    <form id="form">
+
+        <input
+            type="text"
+            id="text"
+            placeholder="Enter Description"
+            required
+        >
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter Amount"
+            required
+        >
+
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button>Add Transaction</button>
+
+    </form>
+
+    <h2>Transaction History</h2>
+
+    <ul id="list"></ul>
+
+</div>
+
+<script src="20thday.js"></script>
+
+</body>
+</html>
