@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Shopping Cart</title>
+    <link rel="stylesheet" href="21stday.css">
+</head>
+<body>
+
+<header>
+    <h1>Simple Shop</h1>
+
+    <div class="cart">
+        🛒 Cart: <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Headphones</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Headphones',999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Smart Watch</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart('Smart Watch',1999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Speaker</h3>
+        <p>₹1499</p>
+        <button onclick="addToCart('Speaker',1499)">Add to Cart</button>
+    </div>
+
+</section>
+
+<section class="cart-section">
+    <h2>Your Cart</h2>
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+    <button onclick="clearCart()">Clear Cart</button>
+</section>
+
+<script src="21stday.js"></script>
+
+</body>
+</html>
