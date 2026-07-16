@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    background:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:white;
+}
+
+h2{
+    color:yellow;
+}
+
+canvas{
+    background:black;
+    border:4px solid white;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:green;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background:darkgreen;
+}
