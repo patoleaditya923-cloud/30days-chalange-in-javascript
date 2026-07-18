@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Management Dashboard</title>
+
+<link rel="stylesheet" href="26thday.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>🏥 Hospital</h2>
+
+        <ul>
+            <li><i class="fa fa-home"></i> Dashboard</li>
+            <li><i class="fa fa-user-injured"></i> Patients</li>
+            <li><i class="fa fa-user-doctor"></i> Doctors</li>
+            <li><i class="fa fa-bed"></i> Beds</li>
+            <li><i class="fa fa-calendar"></i> Appointments</li>
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>Hospital Dashboard</h1>
+
+            <input
+            type="text"
+            id="search"
+            placeholder="Search Patient">
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+                <h2 id="patientCount">0</h2>
+                <p>Total Patients</p>
+            </div>
+
+            <div class="card">
+                <h2 id="doctorCount">12</h2>
+                <p>Doctors</p>
+            </div>
+
+            <div class="card">
+                <h2 id="bedCount">25</h2>
+                <p>Available Beds</p>
+            </div>
+
+            <div class="card">
+                <h2 id="appointmentCount">8</h2>
+                <p>Today's Appointments</p>
+            </div>
+
+        </div>
+
+        <!-- Add Patient -->
+
+        <div class="form">
+
+            <h2>Add Patient</h2>
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Patient Name">
+
+            <input
+            type="number"
+            id="age"
+            placeholder="Age">
+
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <button onclick="addPatient()">
+                Add Patient
+            </button>
+
+        </div>
+
+        <!-- Patient Table -->
+
+        <table>
+
+            <thead>
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+
+            </thead>
+
+            <tbody id="patientTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="26thday.js"></script>
+
+</body>
+</html>
