@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+/* Banner */
+
+.banner{
+    background:url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600") center/cover;
+    height:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    position:relative;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.banner h1,
+.banner p,
+.banner input{
+    position:relative;
+    z-index:2;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.banner input{
+    width:320px;
+    max-width:90%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+/* Dashboard */
+
+.dashboard{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+/* Rooms */
+
+.rooms{
+    width:90%;
+    margin:50px auto;
+}
+
+.rooms h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d6efd;
+}
+
+.room-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.room{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.room:hover{
+    transform:translateY(-8px);
+}
+
+.room img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.room h3{
+    margin:18px;
+}
+
+.room p{
+    margin:0 18px 18px;
+    color:#555;
+}
+
+.room button{
+    margin:0 18px 20px;
+    width:calc(100% - 36px);
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.room button:hover{
+    background:#084298;
+}
+
+/* Footer */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.banner{
+    height:340px;
+}
+
+.banner h1{
+    font-size:34px;
+}
+
+.banner p{
+    font-size:17px;
+}
+
+.banner input{
+    width:260px;
+}
+
+.card{
+    padding:25px;
+}
+
+.room img{
+    height:200px;
+}
+
+}

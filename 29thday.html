@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Management Dashboard</title>
+
+<link rel="stylesheet" href="29thday.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-hotel"></i>
+<h2>Luxury Hotel</h2>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Rooms</a>
+<a href="#">Guests</a>
+<a href="#">Bookings</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="banner">
+
+<h1>Welcome To Luxury Hotel</h1>
+
+<p>Book Your Dream Room Today</p>
+
+<input
+type="text"
+id="search"
+placeholder="Search Room..."
+>
+
+</section>
+
+<section class="dashboard">
+
+<div class="card">
+
+<i class="fa-solid fa-bed"></i>
+
+<h2 id="totalRooms">20</h2>
+
+<p>Total Rooms</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user"></i>
+
+<h2 id="guestCount">12</h2>
+
+<p>Guests</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h2>8</h2>
+
+<p>Bookings</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-money-bill"></i>
+
+<h2>$8500</h2>
+
+<p>Revenue</p>
+
+</div>
+
+</section>
+
+<section class="rooms">
+
+<h2>Available Rooms</h2>
+
+<div class="room-container">
+
+<div class="room">
+
+<img
+src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600"
+alt="room">
+
+<h3>Deluxe Room</h3>
+
+<p>Price : $120/Night</p>
+
+<button onclick="bookRoom(this)">
+Book Now
+</button>
+
+</div>
+
+<div class="room">
+
+<img
+src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+alt="room">
+
+<h3>Luxury Suite</h3>
+
+<p>Price : $220/Night</p>
+
+<button onclick="bookRoom(this)">
+Book Now
+</button>
+
+</div>
+
+<div class="room">
+
+<img
+src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600"
+alt="room">
+
+<h3>Family Room</h3>
+
+<p>Price : $180/Night</p>
+
+<button onclick="bookRoom(this)">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Luxury Hotel Management
+</p>
+
+</footer>
+
+<script src="29thday.js"></script>
+
+</body>
+</html>
